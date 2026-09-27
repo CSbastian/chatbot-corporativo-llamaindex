@@ -4,7 +4,7 @@ recibe correctamente los códigos de datasets.
 """
 import asyncio
 from src.core.index_manager import get_tools_object_index
-from src.workflow.workflow import ObservatorioReActWorkflow
+from src.workflow.workflow import CorporateReActWorkflow
 
 
 async def test_analysis_tool():
@@ -18,7 +18,7 @@ async def test_analysis_tool():
     # Crear workflow
     print("📦 Cargando ObjectIndex...")
     object_index = get_tools_object_index()
-    workflow = ObservatorioReActWorkflow(object_index=object_index, verbose=True)
+    workflow = CorporateReActWorkflow(object_index=object_index, verbose=True)
 
     print("✓ Workflow creado\n")
 

@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from src.core.index_manager import get_tools_object_index
 from src.core.telemetry import setup_telemetry
 from src.core.database import init_db
-from src.workflow.workflow import ObservatorioReActWorkflow
+from src.workflow.workflow import CorporateReActWorkflow
 from src.core.config import WORKFLOW_TIMEOUT
 
 from llama_index.core import set_global_handler
@@ -26,7 +26,7 @@ async def main():
     Función principal del chatbot con soporte de memoria conversacional.
     """
     print("\n" + "="*70)
-    print("🇨🇱  CHATBOT OBSERVATORIO LOGÍSTICO DE CHILE")
+    print("🇨🇱  CHATBOT CHATBOT CORPORATIVO")
     print("    Arquitectura: 100% LlamaIndex ReAct Workflow")
     print("    🧠 Memoria conversacional: ACTIVADA")
     print("    💾 Base de datos: ACTIVADA")
@@ -45,7 +45,7 @@ async def main():
     print(f"✓ Sistema inicializado correctamente\n")
 
     # Crear instancia del workflow (UNA VEZ para toda la sesión)
-    workflow = ObservatorioReActWorkflow(object_index=object_index, timeout=WORKFLOW_TIMEOUT)
+    workflow = CorporateReActWorkflow(object_index=object_index, timeout=WORKFLOW_TIMEOUT)
 
     print("="*70)
     print("💬 Modo interactivo activado")
@@ -132,7 +132,7 @@ def run_single_query(question: str):
     """
     async def _run():
         object_index = get_tools_object_index()
-        workflow = ObservatorioReActWorkflow(object_index=object_index, timeout=WORKFLOW_TIMEOUT)
+        workflow = CorporateReActWorkflow(object_index=object_index, timeout=WORKFLOW_TIMEOUT)
         result = await workflow.run(user_question=question)
         return result
 

@@ -8,13 +8,13 @@ PREGUNTA ACTUAL: {user_question}
 CATEGORÍAS:
 
 1. CONVERSACIONAL:
-   - **CUALQUIER pregunta que NO sea sobre logística, transporte , capital humano, energía y medio ambiente, territorio chileno y comercio exterior**
+   - **CUALQUIER pregunta que NO sea sobre logística, transporte , capital humano, energía y medio ambiente, territorio y comercio exterior**
    - Preguntas de cultura general, deportes, entretenimiento, ciencia, etc.
    - Saludos, despedidas, agradecimientos
    - Preguntas sobre qué puede hacer el sistema
    - Solicitudes de ayuda o información general sobre el chatbot
    - Comentarios sociales sin contenido analítico
-   - **IMPORTANTE**: Si la pregunta no tiene relación con datos logísticos chilenos → CONVERSACIONAL
+   - **IMPORTANTE**: Si la pregunta no tiene relación con datos logísticos → CONVERSACIONAL
    - Respuesta: Mensaje predefinido institucional
 
 2. BUSQUEDA:
@@ -40,8 +40,8 @@ CATEGORÍAS:
 
 DIFERENCIAS CRÍTICAS:
 - CONVERSACIONAL vs ANALÍTICA_DATOS:
-  * CONVERSACIONAL: "¿Quién ganó el mundial de fútbol?" → NO es sobre logística chilena
-  * ANALÍTICA_DATOS: "¿Cuánta carga movió el puerto X?" → SÍ es sobre logística chilena
+  * CONVERSACIONAL: "¿Quién ganó el mundial de fútbol?" → NO es sobre logística
+  * ANALÍTICA_DATOS: "¿Cuánta carga movió el puerto X?" → SÍ es sobre logística
 
 - BUSQUEDA vs ANALÍTICA_DATOS:
   * BUSQUEDA: "¿Qué datasets tienes de puertos?" (quiere saber QUÉ existe)
@@ -61,7 +61,7 @@ DIFERENCIAS CRÍTICAS:
    -Logística ferroviaria
    -Logística marítima
    -Logística urbana
-   -Informacion sobre puertos, carreteras, aeropuertos, comunas y regiones de Chile
+   -Informacion sobre puertos, carreteras, aeropuertos, comunas y regiones
 
 INSTRUCCIONES:
 1. PRIMERO: ¿La pregunta esta entre los TOPICOS RELACIONADOS CON LOGÍSTICA? Si NO → CONVERSACIONAL

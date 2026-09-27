@@ -105,7 +105,7 @@ def _extract_token_usage_from_response(response) -> dict:
     return usage_info
 
 
-class ObservatorioReActWorkflow(Workflow):
+class CorporateReActWorkflow(Workflow):
     """
     Workflow ReAct para el chatbot del Chatbot Corporativo.
 
@@ -250,9 +250,9 @@ class ObservatorioReActWorkflow(Workflow):
         intent_examples = prompt_loader.format_intent_examples_for_prompt(max_per_category=3)
 
         # Prompt de clasificación
-        classification_prompt = f"""# PROMPT DE CLASIFICACIÓN DE INTENCIONES - OBSERVATORIO LOGÍSTICO
+        classification_prompt = f"""# PROMPT DE CLASIFICACIÓN DE INTENCIONES - CHATBOT CORPORATIVO
 
-**Tarea:** Analiza la consulta del usuario y clasifícala en una de las cuatro categorías del sistema. El foco principal es el **Ecosistema de Logística, Transporte, Infraestructura y Economía de Chile**.
+**Tarea:** Analiza la consulta del usuario y clasifícala en una de las cuatro categorías del sistema. El foco principal es el **Ecosistema de Logística, Transporte, Infraestructura y Economía del país**.
 
 ---
 
@@ -265,7 +265,7 @@ class ObservatorioReActWorkflow(Workflow):
 ### 2. DEFINICIÓN DEL ALCANCE (Scope Logístico-Económico)
 Antes de clasificar, considera que los siguientes temas **SÍ pertenecen al ecosistema del proyecto** y NO deben marcarse como CONVERSACIONAL:
 * **Macroeconomía y Precios:** Valor del dólar, IPC, TPM, precio de combustibles (diésel, petróleo, GNL), inflación y costos operativos.
-* **Infraestructura y Territorio:** Puertos, aeropuertos, carreteras, pasos fronterizos, vías férreas, centros logísticos, comunas y regiones de Chile.
+* **Infraestructura y Territorio:** Puertos, aeropuertos, carreteras, pasos fronterizos, vías férreas, centros logísticos, comunas y regiones del país.
 * **Comercio Exterior:** Exportaciones, importaciones, aranceles, aduanas, flujos de carga internacional.
 * **Sostenibilidad y Capital Humano:** Emisiones de CO2, eficiencia energética, empleo en el sector transporte, brechas de género en logística.
 
@@ -289,9 +289,9 @@ Antes de clasificar, considera que los siguientes temas **SÍ pertenecen al ecos
 - **Clave:** Usa pronombres o referencias contextuales ("eso", "aquello", "estos datos").
 
 #### **D. CONVERSACIONAL (Fuera de Ámbito)**
-- **Criterio:** Consultas sociales, saludos o temas totalmente ajenos a la logística y economía chilena.
+- **Criterio:** Consultas sociales, saludos o temas totalmente ajenos a la logística y economía.
 - **Ejemplos:** "Hola", "Gracias", "¿Quién eres?", "¿Cómo está el clima?", "¿Quién ganó el mundial?".
-- **Regla Crítica:** Si la pregunta menciona indicadores económicos chilenos (Dólar, IPC) o transporte, **NUNCA** es conversacional.
+- **Regla Crítica:** Si la pregunta menciona indicadores económicos (Dólar, IPC) o transporte, **NUNCA** es conversacional.
 
 ---
 
@@ -552,7 +552,7 @@ Ejemplo del formato esperado:
 
 **1. C018 - Carga transferida en puertos por tipo de carga y región**
 
-📋 **Descripción**: Toneladas transferidas en los puertos de Chile, por tipo de carga y operación...
+📋 **Descripción**: Toneladas transferidas en los puertos del país, por tipo de carga y operación...
 
 📊 **Estructura de datos**:
 - **Columnas**:
@@ -568,9 +568,9 @@ Ejemplo del formato esperado:
 - Espacial: Nacional / Local (Puerto)
 - Unidad: Tonelada
 
-🏢 **Fuente**: DIRECTEMAR
+🏢 **Fuente**: FUENTE_FICTICIA
 - Actualización: Anual
-- Enlace: https://www.directemar.cl/...
+- Enlace: https://fuente-ficticia.local/...
 
 ℹ️ **Nota**: La fuente no publicó esta información en la última edición...
 
@@ -659,7 +659,7 @@ Genera tu respuesta ahora siguiendo ESTRICTAMENTE este formato:
                         context_info += f"{role}: {preview}\n"
                     context_info += "\n"
 
-        splitting_prompt = f"""Analiza la siguiente pregunta del usuario sobre logística chilena:
+        splitting_prompt = f"""Analiza la siguiente pregunta del usuario sobre logística:
 {context_info}
 PREGUNTA ACTUAL: {user_question}
 

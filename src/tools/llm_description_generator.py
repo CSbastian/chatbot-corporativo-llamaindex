@@ -58,7 +58,7 @@ def obtener_muestras_representativas(df, limite=None):
 
 
 # Prompt para generar descripciones optimizadas
-DESCRIPTION_GENERATION_PROMPT = """Eres un experto en logística y datos de transporte de Chile que trabaja para el Chatbot Corporativo.
+DESCRIPTION_GENERATION_PROMPT = """Eres un experto en logística y datos de transporte del país que trabaja para el Chatbot Corporativo.
 
 Tu tarea es generar una descripción NATURAL y OPTIMIZADA para búsqueda semántica del siguiente dataset.
 
@@ -85,7 +85,7 @@ INSTRUCCIONES PARA LA DESCRIPCIÓN:
 3. **Términos Clave**: Incluye sinónimos y términos relacionados que un usuario podría usar al buscar
    Ejemplo: Si es sobre puertos, menciona: puertos, terminales portuarios, carga marítima, exportaciones, importaciones
 4. **Granularidad**: Especifica claramente la desagregación temporal (mensual, anual, etc.) y espacial (regional, por puerto, etc.)
-5. **Contexto Chileno**: Menciona regiones, ciudades, o instituciones específicas cuando sea relevante
+5. **Contexto Local**: Menciona regiones, ciudades, o instituciones específicas cuando sea relevante
 6. **Valores Ejemplo**: Integra naturalmente algunos valores representativos para dar contexto
 
 REQUISITOS:
@@ -94,7 +94,7 @@ REQUISITOS:
 - NO uses formato markdown, bullets, o estructura rígida
 - NO repitas información innecesariamente
 - Incluye vocabulario técnico Y coloquial para maximizar cobertura de búsqueda
-- Escribe en español de Chile
+- Escribe en español del país
 - incluye valores representativos del dataset para dar contexto real, como "Región Metropolitana, Valparaíso, Asfalto, Contenedores, etc." extrayendolos de la lista de valores representativos.
 
 FORMATO DE SALIDA:
@@ -306,7 +306,7 @@ def generar_todas_las_descripciones(
 
     if verbose:
         print(f"\n{'='*70}")
-        print(f"🚀 GENERADOR DE DESCRIPCIONES LLM - OBSERVATORIO LOGÍSTICO")
+        print(f"🚀 GENERADOR DE DESCRIPCIONES LLM - CHATBOT CORPORATIVO")
         print(f"{'='*70}")
         print(f"📦 Total de datasets encontrados: {total_datasets}")
         print(f"💾 Descripciones existentes: {len(existing_descriptions)}")

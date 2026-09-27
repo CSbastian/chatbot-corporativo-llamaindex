@@ -150,7 +150,7 @@ REACT_ENABLE_MEMORY = True       # Activar/desactivar memoria conversacional
 CONVERSATIONAL_RESPONSE = """Bienvenido al asistente del Chatbot Corporativo (Demo).
 
 Este sistema le permite consultar y analizar datos oficiales sobre:
-- Movimiento de carga en puertos chilenos
+- Movimiento de carga en puertos
 - Transporte terrestre, aéreo y marítimo
 - Comercio exterior
 - Indicadores logísticos y conectividad
@@ -162,7 +162,7 @@ Puede realizar consultas de datos específicos o solicitar información sobre lo
 
 
 # SYSTEM PROMPT
-SYSTEM_PROMPT = """Eres un asistente experto en datos logísticos de Chile del Chatbot Corporativo.
+SYSTEM_PROMPT = """Eres un asistente experto en datos logísticos del país del Chatbot Corporativo.
 
 ⚠️ RESTRICCIÓN CRÍTICA - LEE ESTO PRIMERO:
 ESTÁ ABSOLUTAMENTE PROHIBIDO responder preguntas usando tu conocimiento base o entrenamiento.

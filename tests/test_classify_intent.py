@@ -7,7 +7,7 @@ import asyncio
 import sys
 from pathlib import Path
 
-from src.workflow.workflow import ObservatorioReActWorkflow
+from src.workflow.workflow import CorporateReActWorkflow
 from src.core.index_manager import get_tools_object_index
 
 
@@ -31,7 +31,7 @@ async def test_classify_intent():
     print("✅ ObjectIndex cargado\n")
 
     # Crear workflow
-    workflow = ObservatorioReActWorkflow(object_index=object_index)
+    workflow = CorporateReActWorkflow(object_index=object_index)
 
     # ====================================================================
     # TEST 1: CONVERSACIONAL

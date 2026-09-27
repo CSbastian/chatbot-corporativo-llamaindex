@@ -2,7 +2,7 @@
 Módulo workflow: Motor ReAct Workflow del chatbot.
 """
 
-from src.workflow.workflow import ObservatorioReActWorkflow
+from src.workflow.workflow import CorporateReActWorkflow
 from src.workflow.events import (
     PrepareEvent,
     IntentClassificationEvent,
@@ -16,7 +16,7 @@ from src.workflow.events import (
 from src.workflow.agent import create_agent_system_prompt
 
 __all__ = [
-    'ObservatorioReActWorkflow',
+    'CorporateReActWorkflow',
     'PrepareEvent',
     'IntentClassificationEvent',
     'QuerySplittingEvent',

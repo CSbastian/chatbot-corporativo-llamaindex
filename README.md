@@ -2,7 +2,7 @@
 
 > **Nota:** Este repositorio es una versión pública de un proyecto de portafolio. Los datos originales (48 datasets reales) han sido eliminados y reemplazados por datos sintéticos (mock data) para cumplir con políticas de confidencialidad y acuerdos de no divulgación (NDA).
 
-Chatbot para el análisis de datos logísticos en Chile. Este archivo proporciona las instrucciones necesarias para poner en marcha el proyecto, ajustar su configuración, y llevar a cabo el testeo y la depuración de la herramienta.
+Chatbot para el análisis de datos logísticos. Este archivo proporciona las instrucciones necesarias para poner en marcha el proyecto, ajustar su configuración, y llevar a cabo el testeo y la depuración de la herramienta.
 
 ## ✨ Características
 
@@ -506,8 +506,8 @@ REACT_MEMORY_TOKEN_LIMIT = 6000      # Valor actual: 6000 tokens
 # En código Python
 
 #Primero se importamos e inicializamos el chatbot
-from src.workflow.workflow import ObservatorioReActWorkflow
-workflow = ObservatorioReActWorkflow(object_index=object_index)
+from src.workflow.workflow import CorporateReActWorkflow
+workflow = CorporateReActWorkflow(object_index=object_index)
 
 # Obtener historial actual
 history = workflow.get_chat_history()

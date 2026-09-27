@@ -33,7 +33,7 @@ from llama_index.core.llms import ChatMessage
 
 # Importar el nuevo workflow de LlamaIndex
 from src.core.index_manager import get_tools_object_index
-from src.workflow.workflow import ObservatorioReActWorkflow
+from src.workflow.workflow import CorporateReActWorkflow
 from src.core.config import (
     TELEMETRY_ENDPOINT,
     TELEMETRY_UI_URL,
@@ -148,7 +148,7 @@ def inicializar_sistema():
     Inicializa el workflow de LlamaIndex y el LLM evaluador.
 
     Returns:
-        Tuple[ObservatorioReActWorkflow, OpenAI]: Workflow y LLM evaluador
+        Tuple[CorporateReActWorkflow, OpenAI]: Workflow y LLM evaluador
     """
     print("🚀 Inicializando sistema...")
 
@@ -158,7 +158,7 @@ def inicializar_sistema():
 
     # Crear workflow
     print(f"  ⚙️  Creando workflow ReAct (timeout={WORKFLOW_TIMEOUT}s)...")
-    workflow = ObservatorioReActWorkflow(object_index=object_index, timeout=WORKFLOW_TIMEOUT)
+    workflow = CorporateReActWorkflow(object_index=object_index, timeout=WORKFLOW_TIMEOUT)
 
     # LLM evaluador desde config
     print("  🤖 Inicializando LLM evaluador desde config...")
@@ -387,7 +387,7 @@ Responde ÚNICAMENTE en el siguiente formato JSON (sin markdown):
 
 
 async def obtener_respuesta_chatbot(
-    workflow: ObservatorioReActWorkflow,
+    workflow: CorporateReActWorkflow,
     pregunta: str,
     mapeo_titulo_codigo: Dict[str, str]
 ) -> Tuple[str, List[str]]:
@@ -395,7 +395,7 @@ async def obtener_respuesta_chatbot(
     Obtiene la respuesta del chatbot usando el workflow de LlamaIndex.
 
     Args:
-        workflow: Instancia del ObservatorioReActWorkflow
+        workflow: Instancia del CorporateReActWorkflow
         pregunta: La pregunta a hacer
         mapeo_titulo_codigo: Mapeo de títulos normalizados a códigos de dataset
 

@@ -30,7 +30,7 @@ Tests:
     python -m tests.test_poolDS --dataset tests/test_consultas.json
 """
 
-from src.workflow.workflow import ObservatorioReActWorkflow
+from src.workflow.workflow import CorporateReActWorkflow
 from src.workflow.events import (
     PrepareEvent,
     QuerySplittingEvent,
@@ -43,7 +43,7 @@ from src.workflow.events import (
 )
 
 __all__ = [
-    'ObservatorioReActWorkflow',
+    'CorporateReActWorkflow',
     'PrepareEvent',
     'IntentClassificationEvent',
     'QuerySplittingEvent',

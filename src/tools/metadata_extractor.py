@@ -78,7 +78,7 @@ def _extraer_metadata_de_lista(data_list, nombre_archivo):
             meta_limpia["fecha_ultima_actualizacion"] = valor
         elif tipo_variable == "cobertura_espacial":
             if item.get(codigo_key, "")== "País":
-                valor="Nacional / Local / Chile"
+                valor="Nacional / Local"
             elif item.get(codigo_key, "")== "Mundial":
                 valor= "Mundial / Internacional"
             else:
