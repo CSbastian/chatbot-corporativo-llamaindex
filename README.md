@@ -1,7 +1,5 @@
 # Chatbot Corporativo (Demo)
 
-> **Nota:** Este repositorio es una versión pública de un proyecto de portafolio. Los datos originales (48 datasets reales) han sido eliminados y reemplazados por datos sintéticos (mock data) para cumplir con políticas de confidencialidad y acuerdos de no divulgación (NDA).
-
 Chatbot para el análisis de datos logísticos. Este archivo proporciona las instrucciones necesarias para poner en marcha el proyecto, ajustar su configuración, y llevar a cabo el testeo y la depuración de la herramienta.
 
 ## ✨ Características
