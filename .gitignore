@@ -1,0 +1,47 @@
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv/
+
+# Datos y almacenamiento
+json/analisis.ipynb
+logs/
+storage_tools/
+phoenix_data/
+
+# API Keys y configuración sensible
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentación
+AGENTS.md
+
+# Distribuciones y empaquetados
+*.egg-info/
+dist/
+build/
+
+# Base de datos
+*.db
+*.sqlite3
+*.sqlite
+*.db-journal
+

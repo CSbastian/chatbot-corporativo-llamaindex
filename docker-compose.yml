@@ -1,0 +1,10 @@
+services :
+  phoenix:
+    image: arizephoenix/phoenix:latest
+    ports:
+      - "6006:6006" # UI para ver los gráficos
+      - "4317:4317" # Puerto OTLP (gRPC) para recibir los datos
+    environment :
+      -   PHOENIX_WORKING_DIR=/phoenix/data
+    volumes :
+      - ./phoenix_data:/phoenix/data

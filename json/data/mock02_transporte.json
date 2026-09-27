@@ -1,0 +1,20 @@
+[
+  {
+    "region": "Regi\u00f3n Norte",
+    "ano": 2023,
+    "tipo_vehiculo": "Cami\u00f3n",
+    "cantidad": 5000
+  },
+  {
+    "region": "Regi\u00f3n Centro",
+    "ano": 2023,
+    "tipo_vehiculo": "Cami\u00f3n",
+    "cantidad": 12000
+  },
+  {
+    "region": "Regi\u00f3n Sur",
+    "ano": 2023,
+    "tipo_vehiculo": "Cami\u00f3n",
+    "cantidad": 3500
+  }
+]

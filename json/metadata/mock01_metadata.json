@@ -1,0 +1,29 @@
+{
+  "codigo": "MOCK01",
+  "titulo": "Carga transferida en puertos MOCK",
+  "categoria": "Mar\u00edtimo",
+  "descripcion": "Dataset de demostraci\u00f3n con toneladas transferidas en puertos ficticios.",
+  "unidad": "Toneladas",
+  "escala_numerica": "Unidades",
+  "cobertura_espacial": "Nacional MOCK",
+  "cobertura_temporal": "2023",
+  "palabras_claves": [
+    "puertos",
+    "carga",
+    "toneladas",
+    "mock"
+  ],
+  "columnas": [
+    "puerto",
+    "ano",
+    "tipo_carga",
+    "toneladas"
+  ],
+  "descripcion_columnas": "puerto: Nombre del puerto\nano: A\u00f1o de la operaci\u00f3n\ntipo_carga: Tipo de carga\ntoneladas: Toneladas movilizadas",
+  "fuente": "Demo Source",
+  "enlace_fuente": "http://demo.source.local",
+  "frecuencia_actualizacion": "Anual",
+  "desagregacion_espacial": "Puerto",
+  "desagregacion_temporal": "Anual",
+  "nota": "Datos falsos para portafolio."
+}

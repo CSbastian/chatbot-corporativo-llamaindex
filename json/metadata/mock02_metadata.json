@@ -1,0 +1,29 @@
+{
+  "codigo": "MOCK02",
+  "titulo": "Flota de transporte terrestre MOCK",
+  "categoria": "Terrestre",
+  "descripcion": "Dataset de demostraci\u00f3n con la cantidad de veh\u00edculos de carga.",
+  "unidad": "Veh\u00edculos",
+  "escala_numerica": "Unidades",
+  "cobertura_espacial": "Nacional MOCK",
+  "cobertura_temporal": "2023",
+  "palabras_claves": [
+    "transporte",
+    "camiones",
+    "flota",
+    "mock"
+  ],
+  "columnas": [
+    "region",
+    "ano",
+    "tipo_vehiculo",
+    "cantidad"
+  ],
+  "descripcion_columnas": "region: Regi\u00f3n del pa\u00eds\nano: A\u00f1o de registro\ntipo_vehiculo: Tipo de veh\u00edculo\ncantidad: Cantidad registrada",
+  "fuente": "Demo Source",
+  "enlace_fuente": "http://demo.source.local",
+  "frecuencia_actualizacion": "Anual",
+  "desagregacion_espacial": "Regi\u00f3n",
+  "desagregacion_temporal": "Anual",
+  "nota": "Datos falsos para portafolio."
+}

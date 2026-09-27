@@ -1,0 +1,26 @@
+[
+  {
+    "puerto": "Puerto MOCK Norte",
+    "ano": 2023,
+    "tipo_carga": "Granel",
+    "toneladas": 1500000
+  },
+  {
+    "puerto": "Puerto MOCK Norte",
+    "ano": 2023,
+    "tipo_carga": "Contenedores",
+    "toneladas": 2000000
+  },
+  {
+    "puerto": "Puerto MOCK Sur",
+    "ano": 2023,
+    "tipo_carga": "Granel",
+    "toneladas": 800000
+  },
+  {
+    "puerto": "Puerto MOCK Sur",
+    "ano": 2023,
+    "tipo_carga": "Contenedores",
+    "toneladas": 500000
+  }
+]
